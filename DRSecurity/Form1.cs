@@ -67,17 +67,16 @@ namespace DRSecurity
 
         private void button3_Click(object sender, EventArgs e)
         {
-            //string CurpAux = dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[6].Value.ToString();
-            //if (CurpAux != null)
-            //{
-            //    int i = 1;
-            //    Presentacion.Create Create= new Presentacion.Create(i);
-            //    using( testEntities5 db = new testEntities5() )
-            //    {
-            //        db.Delete_Usr(CurpAux);
-
-            //    }
-            //        Refresh();
+            string CurpAux = dataGridView1.Rows[dataGridView1.CurrentRow.Index].Cells[6].Value.ToString();
+            if (CurpAux != null)
+            {
+                int i = 1;
+                Presentacion.Create Create= new Presentacion.Create(i);
+                using( testEntities5 db = new testEntities5() )
+                {
+                    db.Delete_Usr(CurpAux);
+                }
+                    Refresh();
             }
         }
     }
