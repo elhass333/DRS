@@ -75,7 +75,6 @@ namespace DRSecurity
                 using( testEntities5 db = new testEntities5() )
                 {
                     db.Delete_Usr(CurpAux);
-
                 }
                     Refresh();
             }
